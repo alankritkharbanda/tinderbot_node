@@ -1,0 +1,30 @@
+apis
+
+
+Request headers
+
+Header name	Description / example	Required?
+X-Auth-Token	A UUID4 format authentication token obtained via the /auth api endpoint	Yes
+Content-type	application/json	Yes
+app_version	3	no
+platform	ios	no
+User-agent	User-Agent: Tinder/3.0.4 (iPhone; iOS 7.1; Scale/2.00)	Yes
+os_version	700001	No
+
+
+
+
+
+curl -X POST https://api.gotinder.com/auth --data '{"facebook_token": fb_token, "facebook_id": fb_user_id}'
+
+curl -X POST https://api.tinder.com/profile --data '{"age_filter_min": 26, "gender": 1, "age_filter_max": 32, "distance_filter": 14}'
+
+curl -X POST 'https://api.gotinder.com/report/{_id} --data '{"cause": cause_id}'
+
+curl 'https://api.gotindaer.com/user/matches/{_id} --data '{"message": "your message here"}'
+
+curl 'https://api.gotindaer.com/user/ping --data '{"lat": latitude, "lon": longitude}'
+
+curl https://api.gotinder.com/{like|pass}/{_id}
+
+curl https://api.gotinder.com/user/recs

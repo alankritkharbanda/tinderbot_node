@@ -1,0 +1,10 @@
+{
+  "name": "Tinder Bot",
+  "version": "1.0.0",
+  "description": "Bleh",
+  "private": "true",
+  "dependencies": {
+    "tinderjs": "^1.0.8",
+    "sleep": "^5.0.0"
+  }
+}
